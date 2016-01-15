@@ -1,4 +1,4 @@
-package com.eden.common;
+package com.eden.apache.commons;
 
 public class CollectionUtilsTest {
 
