@@ -21,6 +21,7 @@ public class CompareTest {
 		spList.add(spD);
 		spList.add(spC);
 		System.out.println(spList);
+
 		// Collections.sort(spList);
 		Collections.sort(spList, new Comparator<ServiceProviderLookupDto>() {
 			public int compare(ServiceProviderLookupDto sp1, ServiceProviderLookupDto sp2) {
