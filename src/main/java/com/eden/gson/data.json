@@ -1,15 +1,108 @@
 {
-	
+	"data": {
+		"_id": "5871440f76e64418be4dc7b0",
+		"updatedBy": {
+			"_id": "58708194e765cc0ea12c7b66",
+			"displayName": "Jason Cui"
+		},
+		"updated": "2017-01-13T09:49:39.905Z",
+		"createdBy": {
+			"_id": "58708194e765cc0ea12c7b66",
+			"displayName": "Jason Cui"
+		},
+		"__v": 78,
+		"created": "2017-01-07T19:39:59.403Z",
 		"collects": ["devuser",
 		"jack",
 		"cuija"],
-		"updatedBy": [{
-			"_id": "58708194e765cc0ea12c7b66",
-			"displayName": "Jason Cui"
-		},{
-			"_id": "58708194e7sfsf2c7b66",
-			"displayName": "JassdfsfsfsfCui"
-		},],
-		"title": "年会预热"
-
+		"likes": ["devuser",
+		"jack",
+		"cuija"],
+		"comments": [{
+			"createdBy": "DOCU Admin",
+			"created": "2017-01-08T12:06:19.567Z",
+			"content": "嘿，我最近接到一个 Web 项目，不过老实说，我这两年没怎么接触 Web 编程，听说 Web 技术已经发生了一些变化。听说你是这里对新技术最了解的 Web 开发工程师？",
+			"sequence": 1
+		},
+		{
+			"createdBy": "DOCU Admin",
+			"created": "2017-01-08T12:06:29.112Z",
+			"content": "准确地说，我是一名「前端工程师」。不过你算是找对人了。我对今年的技术别提多熟了，前端可视化、音乐播放器、能踢足球的无人机，你尽管问吧。我刚去 JS 大会和 React 大会逛了一圈，没有什么新技术是我不知道的。",
+			"sequence": 2
+		},
+		{
+			"createdBy": "DOCU Admin",
+			"created": "2017-01-08T12:06:34.926Z",
+			"content": "厉害。是这样的，我要开发一个网页，用来展示用户的最新动态。我想我应该通过后端接口获取数据，然后用一个 table 来展示数据，用户可以对数据进行排序。如果服务器上的数据变化了，我还需要更新这个 table 。我的思路是用 jQuery 来做。",
+			"sequence": 3
+		},
+		{
+			"createdBy": "Jason Cui",
+			"created": "2017-01-08T12:08:45.585Z",
+			"content": "可别用 jQuery ！现在哪还有人用 jQuery 。现在是 2016 年了，你绝对应该用 React 。",
+			"sequence": 4
+		}],
+		"votings": [{
+			"description": "啊实打实的",
+			"isVoted": true,
+			"title": "你到底回不回公司?",
+			"selectionType": "single",
+			"options": [{
+				"sequence": 1,
+				"description": "回",
+				"voteDetails": [{
+					"createdBy": "jack",
+					"created": "2017-01-12T09:36:31.888Z"
+				}]
+			},
+			{
+				"sequence": 2,
+				"description": "不回",
+				"voteDetails": []
+			},
+			{
+				"sequence": 3,
+				"description": "留在公司过夜",
+				"voteDetails": [{
+					"createdBy": "devuser",
+					"created": "2017-01-12T07:20:48.139Z"
+				},
+				{
+					"createdBy": "cuija",
+					"created": "2017-01-12T16:42:16.235Z"
+				}]
+			}],
+			"visibility": "all"
+		},
+		{
+			"description": "3123123",
+			"visibility": "all",
+			"options": [{
+				"voteDetails": [{
+					"created": "2017-01-13T09:49:54.161Z",
+					"createdBy": "cuija"
+				}],
+				"description": "123123",
+				"sequence": 0
+			},
+			{
+				"voteDetails": [{
+					"created": "2017-01-13T09:49:54.161Z",
+					"createdBy": "cuija"
+				}],
+				"description": "Option2123123123",
+				"sequence": 1
+			}],
+			"selectionType": "multi",
+			"title": "12312312"
+		}],
+		"attachments": [{
+			"link": "http://112.74.166.187:8443/modules/activities/client/images/uploads/a22822d5110e810779e0c3dc06990f93",
+			"fileType": "image"
+		}],
+		"htmlContent": "<h5><b>重要的事情说三遍</b></h5><h3><b><span>重要的事情说三遍</span></b></h3><h2><b><span>重要的事情说三遍!!</span></b></h2><div><b></b><p><img src=\"/./modules/activities/client/images/uploads/a22822d5110e810779e0c3dc06990f93\"/><br/></p></div><p>年会要开始了.</p><div>当天上午 回公司玩狼人杀 然后中午直接等车去中山.来的打1<br/><br/></div>",
+		"title": "年会预热",
+		"isLiked": true,
+		"isCollected": true
 	}
+}
