@@ -49,6 +49,7 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.0</version>
 		</dependency>
+<<<<<<< HEAD
 		<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
 		<dependency>
 			<groupId>redis.clients</groupId>
@@ -58,6 +59,8 @@
 
 		<!-- poi <dependency> <groupId>org.apache.poi</groupId> <artifactId>poi</artifactId> 
 			<version>3.9</version> </dependency> -->
+=======
+>>>>>>> 6e12b0fc072f3f7bed6ae74ae5e8ede837521aa2
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
