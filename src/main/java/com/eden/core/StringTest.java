@@ -2,11 +2,17 @@ package com.eden.core;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
+
+import com.eden.dto.Student;
 
 public class StringTest {
 	
@@ -16,12 +22,23 @@ public class StringTest {
 	public static void main(String[] args) throws IOException {
 //		String fileName = getPblNumByFilePath(str);
 //		System.out.println(fileName);
-		Elements newEles = getElementsByNewFilePath(str);
-		String newString = newEles.toString().trim();
+//		Elements newEles = getElementsByNewFilePath(str);
+//		String newString = newEles.toString().trim();
+//		
+//		Elements oldEles = getElementsByOldFilePath(str);
+//		String oldsString = oldEles.toString().trim();
+//		System.out.println(oldsString);
+		Student s1 = new Student("1", 10, "boy");
+		Student s2 = new Student("2", 20, "boy");
+		Map<String, Student> m1 = new HashMap<String, Student>();
+		m1.put("1", s1);
+		m1.put("2", s2);
+		Collection<Student> c1 = m1.values();
+		for (Student s : c1) {
+			System.out.println(s.getGender());
+		}
 		
-		Elements oldEles = getElementsByOldFilePath(str);
-		String oldsString = oldEles.toString().trim();
-		System.out.println(oldsString);
+		System.out.println(new Date().getTime());
 	}
 	
 	public static String getPblNumByFilePath(String filePath) {
