@@ -1,20 +1,14 @@
 package com.eden.core;
 
-<<<<<<< HEAD
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-=======
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
->>>>>>> 6e12b0fc072f3f7bed6ae74ae5e8ede837521aa2
 import java.util.TimeZone;
 
 public class DateTest {
 
-<<<<<<< HEAD
 	public static void main(String[] args) throws ParseException {
 //		java.util.Date nowdate=new java.util.Date(); 
 //		String myString = "2008-09-08";
@@ -77,8 +71,8 @@ public class DateTest {
         
         Date siReceiveTimeInTurkey = new SimpleDateFormat("dd MMM yyyy, HH:mm").parse(siReceiveTimeInTurkeyStr);
         System.out.println(siReceiveTimeInTurkey);
-=======
-	public static void main(String[] args) {
+
+
 		System.out.println(System.currentTimeMillis());
 		
 		//format Date
@@ -99,7 +93,6 @@ public class DateTest {
 		//use GregorianCalendar to show hour, minute, second
 		Calendar japanCalendar = new GregorianCalendar(TimeZone.getTimeZone("Japan"));
 		System.out.println(japanCalendar.get(Calendar.DATE) + ":" + japanCalendar.get(Calendar.HOUR));
->>>>>>> 6e12b0fc072f3f7bed6ae74ae5e8ede837521aa2
 	}
 
 }

@@ -15,7 +15,7 @@ public class TryCatchTest {
 		} catch (ParseException e) {
 			System.out.println("error hello!!");
 			e.printStackTrace();
-			return;
+//			return;
 //			System.out.println("sdfs");
 		} finally {
 			System.out.println("finally run or not");

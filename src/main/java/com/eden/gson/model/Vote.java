@@ -1,9 +1,6 @@
 package com.eden.gson.model;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 6e12b0fc072f3f7bed6ae74ae5e8ede837521aa2
 import java.util.List;
 
 /**

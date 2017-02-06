@@ -1,25 +1,17 @@
 package com.eden.gson;
 
 import java.io.BufferedReader;
-<<<<<<< HEAD
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-=======
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
-
-import com.eden.gson.model.Comment;
->>>>>>> 6e12b0fc072f3f7bed6ae74ae5e8ede837521aa2
 import com.eden.gson.model.TeamActivity;
 import com.google.gson.Gson;
 
 public class String2Json {
 
 	public static void main(String[] args) throws IOException {
-<<<<<<< HEAD
+
 		StringBuilder result = new StringBuilder();
 
 		File file = new File("D:\\SourceCode\\grammer-test\\src\\main\\java\\com\\eden\\gson\\data.json");
@@ -39,8 +31,8 @@ public class String2Json {
 		System.out.println(fromJson(jsonStr, TeamActivity.class));
 
 		// System.out.println(result);
-=======
-		String jsonStr = prepareData();
+
+//		String jsonStr = prepareData();
 		
 		 Gson gson = new Gson();
 //		 TeamActivity obj = gson.fromJson(jsonStr, TeamActivity.class);
@@ -51,7 +43,7 @@ public class String2Json {
 //			System.out.println(s.getContent());
 //		}
 		System.out.println(obj1.getTitle());
->>>>>>> 6e12b0fc072f3f7bed6ae74ae5e8ede837521aa2
+
 	}
 
 	public static <T> T fromJson(String json, Class<T> classOfT) {
@@ -63,9 +55,7 @@ public class String2Json {
 		}
 		return null;
 	}
-<<<<<<< HEAD
-=======
-	
+
 	static String prepareData() throws IOException {
 		String pathName = "D:\\SourceCode\\grammer-test\\src\\main\\java\\com\\eden\\gson\\data.json";
 		BufferedReader br = new BufferedReader(new FileReader(pathName));
@@ -78,6 +68,5 @@ public class String2Json {
 		System.out.println(sb.toString());
 		return sb.toString();
 	}
->>>>>>> 6e12b0fc072f3f7bed6ae74ae5e8ede837521aa2
 
 }
