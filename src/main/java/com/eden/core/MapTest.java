@@ -48,10 +48,10 @@ public class MapTest {
 		
 		//LinkedHashMap 按插入顺序，不同步
 		Map<String, String> linkedHashMap = new LinkedHashMap<String, String>();
-		linkedHashMap.put("b", "aaa");
-		linkedHashMap.put("a", "bbb");
-		linkedHashMap.put("c", "ddd");
-		linkedHashMap.put("d", "ccc");
+		linkedHashMap.put("b", "bbb");
+		linkedHashMap.put("a", "aaa");
+		linkedHashMap.put("c", "ccc");
+		linkedHashMap.put("d", "ddd");
 		Iterator<String> iterator_3 = linkedHashMap.keySet().iterator();
 		while (iterator_3.hasNext()) {
 			Object key = iterator_3.next();

@@ -60,11 +60,33 @@ public class DateTest {
 //		System.out.println(d1.before(d2));
 //		System.out.println(d1.after(d3));
 		
-		String siReceiveTimeStr = "22 Oct 2016, 05:39";
-        SimpleDateFormat formatterGMT = new SimpleDateFormat("dd MMM yyyy, HH:mm");
-        formatterGMT.setTimeZone(TimeZone.getTimeZone("GMT"));
-        Date siReceiveTime =formatterGMT.parse(siReceiveTimeStr);
 		
+//		yyyyMMddHHmmss.SSS
+		
+		String siReceiveTimeStr = "22 Oct 2016, 05:39";
+		
+		 SimpleDateFormat localFormatter = new SimpleDateFormat("dd MMM yyyy, HH:mm");
+        localFormatter.setTimeZone(TimeZone.getTimeZone("GMT"));
+        Date localDateInSourceTimezone = localFormatter.parse(siReceiveTimeStr);
+        SimpleDateFormat targetLocalTimeZoneFormatter = new SimpleDateFormat("dd MMM yyyy, HH:mm");
+        targetLocalTimeZoneFormatter.setTimeZone(TimeZone.getTimeZone("GMT"));
+        String newSiReceiveTimeStr = targetLocalTimeZoneFormatter.format(localDateInSourceTimezone);
+        
+        SimpleDateFormat dateFormatNormal = new SimpleDateFormat("dd MMM yyyy, HH:mm");
+        Date dateForTest = dateFormatNormal.parse(newSiReceiveTimeStr);
+		System.out.println(dateForTest);
+		
+//        SimpleDateFormat formatterGMT = new SimpleDateFormat("dd MMM yyyy, HH:mm");
+//        formatterGMT.setTimeZone(TimeZone.getTimeZone("GMT"));
+//        Date siReceiveTime =formatterGMT.parse(siReceiveTimeStr);
+        
+        SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy, HH:mm");
+        String dateString = formatter.format(dateForTest);
+        
+      SimpleDateFormat formatterGMT = new SimpleDateFormat("dd MMM yyyy, HH:mm");
+      formatterGMT.setTimeZone(TimeZone.getTimeZone("GMT"));
+      Date siReceiveTime =formatterGMT.parse(siReceiveTimeStr);
+        
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM yyyy, HH:mm");  
         dateFormat.setTimeZone(TimeZone.getTimeZone("Turkey"));  
         String siReceiveTimeInTurkeyStr = dateFormat.format(siReceiveTime);

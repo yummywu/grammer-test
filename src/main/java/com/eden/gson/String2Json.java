@@ -18,7 +18,7 @@ public class String2Json {
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		String s = null;
 		while ((s = br.readLine()) != null) {
-			result.append(System.lineSeparator() + s);
+//			result.append(System.lineSeparator() + s);
 		}
 		br.close();
 
