@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="com.eden.spring.example_4.FirstBean"></bean>
+
+
+<!--setter injection-->
+    <bean id="B" class="com.eden.spring.example_2.B"/>
+    <bean id="A" class="com.eden.spring.example_2.A">
+        <property name="b" ref="B"/>
+    </bean>
+
+    <!--constructor injection
+    <bean id="B" class="com.eden.spring.example_3.B"/>
+    <bean id="A" class="com.eden.spring.example_3.A">
+        <constructor-arg type="com.eden.spring.example_3.B"  ref="B"></constructor-arg>
+    </bean>-->
+
+
+</beans>
