@@ -7,3 +7,4 @@ target/
 .settings/
 .idea/
 grammer-test.iml
+grammer-test.log
