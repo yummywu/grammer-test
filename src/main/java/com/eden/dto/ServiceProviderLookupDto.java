@@ -6,6 +6,10 @@ public class ServiceProviderLookupDto {
 	public String bookingOffice;
 	public String ref;
 
+	public ServiceProviderLookupDto() {
+	}
+
+
 	public ServiceProviderLookupDto(String displayName, String ref, String type, String bookingOffice) {
 		this.displayName = displayName;
 		this.type = type;
