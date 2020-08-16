@@ -10,7 +10,6 @@ import com.eden.dto.ServiceProviderLookupDto;
 public class CompareTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		List<ServiceProviderLookupDto> spList = new ArrayList<ServiceProviderLookupDto>();
 		ServiceProviderLookupDto spA = new ServiceProviderLookupDto("oocl", "B", "darrier", "ZHA");
 		ServiceProviderLookupDto spB = new ServiceProviderLookupDto("oocl", "B", "carrier", "ZHA");

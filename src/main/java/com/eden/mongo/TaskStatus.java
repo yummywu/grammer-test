@@ -3,7 +3,6 @@ package com.eden.mongo;
 import java.util.Date;
 import java.util.UUID;
 
-/* Created by Jason Cui on 03-22-2017.*/
 public class TaskStatus {
 
   public String msgId;
