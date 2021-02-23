@@ -16,10 +16,10 @@ public class MapTest {
 		hashMap.put("b", "bbb");
 		hashMap.put("c", "ccc");
 		hashMap.put("d", "ddd");
-		Iterator<String> iterator = hashMap.keySet().iterator();
-		while (iterator.hasNext()) {
-			Object key = iterator.next();
-			System.out.println("map.get(key) is :" + hashMap.get(key));
+		Iterator<String> iterator0 = hashMap.keySet().iterator();
+		while (iterator0.hasNext()) {
+			Object key = iterator0.next();
+			System.out.println("hashMap.get(key) is :" + hashMap.get(key));
 		}
 		
 		//Hashtable 支持同步
@@ -31,7 +31,7 @@ public class MapTest {
 		Iterator<String> iterator_1 = hashTable.keySet().iterator();
 		while (iterator_1.hasNext()) {
 			Object key = iterator_1.next();
-			System.out.println("tab.get(key) is :" + hashTable.get(key));
+			System.out.println("hashTable.get(key) is :" + hashTable.get(key));
 		}
 		
 		//TreeMap 按键排序，不同步
@@ -43,7 +43,7 @@ public class MapTest {
 		Iterator<String> iterator_2 = treeMap.keySet().iterator();
 		while (iterator_2.hasNext()) {
 			Object key = iterator_2.next();
-			System.out.println("tmp.get(key) is :" + treeMap.get(key));
+			System.out.println("treeMap.get(key) is :" + treeMap.get(key));
 		}
 		
 		//LinkedHashMap 按插入顺序，不同步
@@ -55,7 +55,7 @@ public class MapTest {
 		Iterator<String> iterator_3 = linkedHashMap.keySet().iterator();
 		while (iterator_3.hasNext()) {
 			Object key = iterator_3.next();
-			System.out.println("tmp.get(key) is :" + linkedHashMap.get(key));
+			System.out.println("linkedHashMap.get(key) is :" + linkedHashMap.get(key));
 		}
 	}
 
